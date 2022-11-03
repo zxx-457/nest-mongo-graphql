@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CatInput {
+  age: Int!
+  name: String!
+}
+
+type CatObject {
+  age: Int!
+  id: ID!
+  name: String!
+}
+
+type Mutation {
+  createCat(input: CatInput!): CatObject!
+}
+
+type Query {
+  cats: [CatObject!]!
+  hello: String!
+}
